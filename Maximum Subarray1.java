@@ -7,8 +7,9 @@ public class Solution {
         int i;
         for(i = 0;i < A.length;i++){
             if(lastmaxs<0)
-                lastmaxs = 0;
-            lastmaxs += A[i];
+                lastmaxs = A[i];
+            else
+                lastmaxs += A[i];
             if(lastmaxs>maxs)
                 maxs = lastmaxs;
         }
