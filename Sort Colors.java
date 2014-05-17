@@ -12,13 +12,11 @@ public class Solution {
                 t--;
             }
             else if(A[index] == 0){
-                if(index == h){
-                    index++;
-                }
-                else{
+                if(index > h){
                     A[index] = A[h];
                     A[h] = 0;
                 }
+                index++;
                 h++;
             }
             else
