@@ -32,10 +32,6 @@ public class Solution {
             }
             else
                 index++;
-                
-            
-            if(h > t)
-                break;
         }
     }
 }
