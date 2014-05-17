@@ -4,15 +4,6 @@ public class Solution {
             return;
         
         int h = 0, t = A.length-1;
-        while((h < A.length) && (A[h] == 0)){
-            h++;
-        }
-        while((t>=0) && (A[t] == 2)){
-            t--;
-        }
-        if((h >= A.length) || (t < 0) || (h>t))
-            return;
-            
         int index = h;
         while(index <= t){
             if(A[index] == 2){
